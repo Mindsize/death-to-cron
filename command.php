@@ -1,7 +1,7 @@
 <?php
 namespace Mindsize\Commands;
 
-if ( ! ( defined( 'ABSPATH' ) && defined( 'WP_CLI' ) && WP_CLI ) ) {
+if ( ! class_exists( 'WP_CLI' ) ) {
 	return;
 }
 
