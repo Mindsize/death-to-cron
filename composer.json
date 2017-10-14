@@ -1,0 +1,25 @@
+{
+    "name": "mindsize/death-to-cron",
+    "description": "A way to remove all cron events with the specified hook names",
+    "type": "wp-cli-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mindsize",
+            "email": "info@mindsize.me",
+            "homepage": "https://mindsize.me"
+        },
+        {
+            "name": "Gabor Javorszky",
+            "email": "gabor@mindsize.me",
+            "homepage": "https://javorszky.co.uk"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "files": [ "command.php" ]
+    }
+}
