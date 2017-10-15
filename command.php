@@ -1,12 +1,8 @@
 <?php
-namespace Mindsize\Commands;
 
 if ( ! class_exists( 'WP_CLI' ) ) {
 	return;
 }
-
-use WP_CLI;
-use WP_CLI_Command;
 
 /**
  * Implements command to kill all cron events with specified hook names
@@ -83,5 +79,5 @@ class Clear_All_Scheduled_Hooks extends WP_CLI_Command {
 	}
 }
 
-WP_CLI::add_command( 'mindsize cron', __NAMESPACE__ . '\\Clear_All_Scheduled_Hooks' );
+WP_CLI::add_command( 'mindsize cron', 'Clear_All_Scheduled_Hooks' );
 
