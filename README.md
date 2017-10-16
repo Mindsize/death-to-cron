@@ -19,6 +19,8 @@ Once you've done so, you can install this package with:
 
     wp package install git@github.com:mindsize/death-to-cron.git
 
+**Note:** You need to take care to use the all-lowercase version of the github repository name as above because [there's a bug in WP CLI](https://github.com/wp-cli/package-command/issues/43) that currently leaves installed packages out of the list if they were installed from git, AND had a capital letter in either the user or repository name.
+
 ## Contributing
 
 We appreciate you taking the initiative to contribute to this project.
