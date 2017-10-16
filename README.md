@@ -1,23 +1,23 @@
 mindsize/death-to-cron
 ========================
 
-
-
-[![Build Status](https://travis-ci.org/mindsize/death-to-cron.svg?branch=master)](https://travis-ci.org/mindsize/death-to-cron)
-
-Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contributing) | [Support](#support)
-
 ## Using
 
+    wp mindsize cron killall <hookname>
 
+That will remove all scheduled actions with the specified hookname. You can pass multiple hook names to it if you want to remove more than one scheduled hooks in one go:
+
+    wp mindsize cron killall <hook1> <hook2> ...
+
+Bear in mind that it WILL remove those hooks from the cron array, and the change is irreversible.
 
 ## Installing
 
-Installing this package requires WP-CLI v1.1.0 or greater. Update to the latest stable release with `wp cli update`.
+Installing this package requires WP-CLI v1.3.0 or greater. Update to the latest stable release with `wp cli update`.
 
 Once you've done so, you can install this package with:
 
-    wp package install git@github.com:mindsize/death-to-cron-2.git
+    wp package install git@github.com:mindsize/death-to-cron.git
 
 ## Contributing
 
